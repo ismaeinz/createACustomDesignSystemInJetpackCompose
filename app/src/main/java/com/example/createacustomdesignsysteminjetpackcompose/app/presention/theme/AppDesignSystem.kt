@@ -1,4 +1,4 @@
-package com.example.createacustomdesignsysteminjetpackcompose.ui.theme
+package com.example.createacustomdesignsysteminjetpackcompose.app.presention.theme
 
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
@@ -41,7 +41,8 @@ data class AppSize(
     val small: Dp,
 )
 
-val LocalAppColorScheme = staticCompositionLocalOf {
+val LocalAppColorScheme =
+    staticCompositionLocalOf {
     AppColorScheme(
         background = Color.Unspecified,
         onBackground = Color.Unspecified,
@@ -51,7 +52,8 @@ val LocalAppColorScheme = staticCompositionLocalOf {
         onSecondary = Color.Unspecified
     )
 }
-val LocalAppTypography = staticCompositionLocalOf {
+val LocalAppTypography =
+    staticCompositionLocalOf {
     AppTypography(
         titleLarge = TextStyle.Default,
         titleNormal = TextStyle.Default,
@@ -61,12 +63,14 @@ val LocalAppTypography = staticCompositionLocalOf {
         labelNormal = TextStyle.Default
     )
 }
-val LocalAppShape = staticCompositionLocalOf {
+val LocalAppShape =
+    staticCompositionLocalOf {
     AppShape(
         container = RectangleShape, button = RectangleShape
     )
 }
-val LocalAppSize = staticCompositionLocalOf {
+val LocalAppSize =
+    staticCompositionLocalOf {
     AppSize(
         large = Dp.Unspecified,
         medium = Dp.Unspecified,
